@@ -38,9 +38,11 @@ a {
 
 .settings {
   margin: 0 auto;
-  padding: 24px;
 
   width: 400px;
+  box-sizing: border-box;
+  padding: 24px;
+
   border-radius: 4px;
 
   font-size: 14px;
