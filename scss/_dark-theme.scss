@@ -1,0 +1,58 @@
+@media (prefers-color-scheme: dark) {
+  .theme {
+    background-color: $color-bg_dark;
+
+    .heading {
+      color: $color-bg_light;
+    }
+
+    .settings {
+      background-color: $color-settings_dark;
+      border: none;
+
+      &-header {
+        color: $color-main_light;
+
+        &::before {
+          background-color: $color-icon_bg_dark;
+
+          color: $color-icon_dark;
+        }
+      }
+
+      &__list {
+        color: $color-main_dark;
+      }
+
+      &__btn {
+        color: $color-main_dark;
+        background: $color-settings_dark;
+
+        transition: all .4s;
+
+        &:hover {
+          cursor: pointer;
+
+          background: $color-btn;
+          color: $color-settings_light;
+        }
+      }
+    }
+
+    .pop-up {
+      background-color: $color-overlay_dark;
+
+      &__wrapper {
+        background: $color-bg_dark;
+        color: $color-bg_light;
+      }
+
+      &__close {
+        span {
+          background-color: $color-bg_light;
+        }
+      }
+    }
+  }
+
+}

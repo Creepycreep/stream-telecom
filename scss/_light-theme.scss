@@ -1,0 +1,62 @@
+@media (prefers-color-scheme: light) {
+  .theme {
+    background-color: $color-bg_light;
+
+    .heading {
+      color: $color-popup-main_light;
+    }
+
+    .settings {
+      background-color: $color-settings_light;
+      border: 1px solid #E2E2E2;
+
+      &-header {
+        color: $color-main_light;
+
+        &::before {
+          background-color: $color-icon_bg_light;
+
+          color: $color-main_light;
+        }
+      }
+
+      &__list {
+        color: $color-main_light;
+      }
+
+      &__btn {
+        color: $color-main_light;
+        background: $color-settings_light;
+
+        transition: all .4s;
+
+        &_wrapper {
+          background-image: $color-btn;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          background: $color-btn;
+          color: $color-settings_light;
+        }
+      }
+    }
+
+    .pop-up {
+      background-color: $color-overlay_light;
+
+      &__wrapper {
+        background: $color-settings_light;
+        color: $color-popup-main_light;
+      }
+
+      &__close {
+        span {
+          background-color: $color-popup-main_light;
+        }
+      }
+    }
+  }
+
+}
